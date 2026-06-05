@@ -1,0 +1,73 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "email": "admin@mail.com",
+      "password": "1234",
+      "role": "admin"
+    },
+    {
+      "id": "2",
+      "email": "visitante@mail.com",
+      "password": "1234",
+      "role": "visitor"
+    }
+  ],
+  "todos": [
+    {
+      "taskId": "1",
+      "title": "Configurar la estructura híbrida del proyecto",
+      "completed": true,
+      "id": "2PdSyieA-G0"
+    },
+    {
+      "taskId": "2",
+      "title": "Sincronizar sessionStorage con los filtros del DOM...",
+      "completed": false,
+      "id": "3ZlCNjUvcDk"
+    },
+    {
+      "taskId": "3",
+      "title": "Crear el archivo db.json con la estructura inicial",
+      "completed": true,
+      "id": "3WhhYfOL4BY"
+    },
+    {
+      "taskId": "4",
+      "title": "Implementar el método GET para cargar tareas",
+      "completed": true,
+      "id": "ZOeJ3Yi0AyE"
+    },
+    {
+      "taskId": "5",
+      "title": "Implementar el método POST para agregar tareas",
+      "completed": false,
+      "id": "1nipM9CRC4g"
+    },
+    {
+      "taskId": "6",
+      "title": "Implementar el método DELETE para eliminar tareas",
+      "completed": false,
+      "id": "0DAoXtM_voc"
+    },
+    {
+      "taskId": "7",
+      "title": "Guardar preferencia de modo oscuro en localStorage",
+      "completed": false,
+      "id": "pThnJKyLmTc"
+    },
+    {
+      "taskId": "8",
+      "title": "Sincronizar el DOM tras cada operación con la API",
+      "completed": false,
+      "id": "jihkCTui0W8"
+    },
+    {
+      "taskId": "9",
+      "title": "Build API REST",
+      "completed": true,
+      "id": "Nb71cQi7_6A"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
