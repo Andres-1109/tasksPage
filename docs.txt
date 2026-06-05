@@ -1,0 +1,18 @@
+Crear proyecto: npm create vite@latest frontend
+Elegir Vanilla → JavaScript
+Install automatically => No
+Entrar a la carpeta: cd frontend
+Instalar dependencias: npm install
+Instalar Tailwind: npm install tailwindcss @tailwindcss/vite
+Crear archivo dentro de carpeta frontend que se llame vite.config.js dentro poner este texto:
+import { defineConfig } from 'vite'
+import tailwindcss from '@tailwindcss/vite'
+
+export default defineConfig({
+  plugins: [tailwindcss()]
+})
+En style.css reemplazar todo por @import "tailwindcss";
+Asegurarse de que main.js importe el css: import './style.css'
+Crear db.json en la raíz de la carpeta back con la estructura de datos
+Levantar Vite: npm run dev (dentro de front)
+Levantar JSON Server: npx json-server db.json (dentro de back)
