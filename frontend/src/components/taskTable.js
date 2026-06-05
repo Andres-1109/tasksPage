@@ -1,4 +1,5 @@
 import { onEdit } from '../pages/editPage.js';
+import { navigateTo } from '../router/router.js';
 import { deleteTask } from '../services/taskService.js';
 
 export function renderTasks(tasks, onDelete) {
@@ -25,7 +26,7 @@ export function renderTasks(tasks, onDelete) {
     });
 
     document.getElementById(`${task.id}-btn-edit`).addEventListener('click', async () => {
-       await onEdit(task);
+       await navigateTo('/edit');
     });
   });
 }

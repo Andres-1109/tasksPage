@@ -1,4 +1,5 @@
 // src/pages/loginPage.js
+import { navigateTo } from '../router/router.js';
 import { loginUser } from '../services/authService.js'
 import { authStore } from '../store/authStore.js'
 import { tasksPage } from './tasksPage.js'
@@ -36,9 +37,9 @@ export function loginPage() {
     authStore.onLogin(user);
 
     if (user.role === 'admin') {
-      tasksPage();
+      navigateTo('/tasks');
     } else {
-      visitorPage();
+      navigateTo('/visitor');
     }
   });
 }

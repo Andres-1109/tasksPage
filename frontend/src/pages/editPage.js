@@ -1,4 +1,5 @@
 
+import { navigateTo } from '../router/router.js';
 import { updateTask } from '../services/taskService.js';
 import { tasksPage } from './tasksPage.js'
 
@@ -39,6 +40,6 @@ export async function onEdit(data){
     if (!title) return;
 
     await updateTask(data.id,{title, completed})
-    tasksPage()
+    navigateTo('/tasks')
   })
 }
